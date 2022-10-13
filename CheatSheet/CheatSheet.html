@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang = "eng"></html>
+<head>
+    <title>"Cheat Sheed</title>
+    <style>
+        #child > p{
+        color:red;
+        }
+        #test p{
+        color:blue;
+        }
+        a:link{
+        color: skyblue;    
+        }
+        a:visted{
+        color: lightgrey;
+        }
+        a:hover{
+        background:black;
+        color:white;
+        }
+        .ul{
+        color:red;
+        }
+        .ol{
+        color:blue;
+        }
+        .square{
+            list-style-type: square;
+        }
+    </style>
+</head>
+<body>
+    <h1> Cheat Sheet 1</h1>
+    <h3 style ="color: mediumblue; border-bottom-style:dotted;">World Wide Web General</h3>
+    <p style="font-style:italic">What are the most essential technologies that made the World Wide Web such a success?</p>
+    <p>HTTPS (Hypertext Transfer Protocol), URL (Uniform Resource Locator), HTML, SMTP (Simple Mail Transfer Protocol), FTP (File Transfer Protocol).</p> 
+    <p style="font-style:italic">How are resources (html pages, images, etc) addressed in the web?</p>
+    <p>They are adressed with the URL (Uniform Resource Locator).</p>
+    <p style="font-style:italic">What are the general components of a URL?</p>
+    <p style="border-bottom-color: mediumblue; border-bottom-style:dotted;">There are 5 components => Scheme (https://), Subdomain (www), Second-level-Domain (goggle), Top-level-Domain (com), Subdirectory (/ index.html/).</p>
+    <h3 style ="color: mediumblue; border-bottom-style:dotted;">Web Server</h3>
+    <p style="font-style:italic">What is a web server?</p>
+    <p>It is computer software and underlying hardware, that accepts requests via HTTPS or its secure variant HTTPS.</p>
+    <p style="font-style:italic">What does a web server?</p>
+    <p>It uses HTTP and other protocols (SMTP, FTP) to respond to client requests made over the World Wide Web (WWW).</p>
+    <p>The Main Job of a web server is to display website content through storing, processing and delievering webpages to users.</p>
+    <p style="font-style:italic">How can content be stored on a web server?</p>
+    <p>They store data on a server using some kind of database (server-side-storage). Then run server-side code to retrieve needed data, insert</p>
+    <p>it into static page templates, and serve the resulting HTML to the client to be displayed by the users browser.</p>
+    <p style="font-style:italic">How is content in webpages described?</p>
+    <p>Page content refers to all the information contained in a website. Page content can be displayed as text, links, images, audio, animation</p>
+    <p p style="border-bottom-color: mediumblue; border-bottom-style:dotted;">or videos among other things.</p>
+    <h3 style ="color: mediumblue; border-bottom-style:dotted;">Web Client</h3>
+    <p style="font-style:italic">What is a web client?</p>
+    <p>It is an application used for connecting to a web server over HTTP (web browser Firefox).</p>
+    <p style="font-style:italic">What does a web client?</p>
+    <p>It retrieves it's files from a web server to find the a website which suits the user request and to graphically render the page on the users srceen.</p>
+    <p>Web Client and Web Browser are they the same?</p>
+    <p style="border-bottom-color: mediumblue; border-bottom-style:dotted;">Yes, they are the same.</p>
+    <br>
+    <h3 style ="color: mediumblue; border-bottom-style:dotted;">Hello World</h3>
+    <p style="font-style:italic">What is the html head element?</p>
+    <p>It is a container for a metadata (data about data).</p>
+    <p style="font-style:italic">What does !DOCTYPE html mean?</p>
+    <p>It is an "infaormation" to the browser about what document type to expect and helps browser to display web page correctly.</p>
+    <p style="font-style:italic">What are the two top most elements within the html element?</p>
+    <p>body, head</p>
+    <p style="font-style:italic">How to emphasize a text and how is it displayed in the browser?</p>
+    <p>You use em tag to emphasize a text and it is displayed as em on CSS.</p>
+    <p style="font-style:italic">How to mark up important ext and how is it displayed in the browser?</p>
+    <p style="border-bottom-color: mediumblue; border-bottom-style:dotted;">You can mark a text with the mark element in html and it has a yellow background.</p>
+    <h1>Cheat Sheet 2</h1>
+    <br>
+    <h3 style ="color: mediumblue; border-bottom-style:dotted;">HTML Basic</h3>
+    <p></p>
+    <p>h = Heading  p = Paragraph  a = Link  href = links destination (www.amazon.de)</p>
+    <p>src = source file  alt = alternative text  width = Breite  height = Höhe</p>
+    <p>img = to embed an Image </p>
+    <p>empty elements = no content and no end tag (/br>)</p>
+    <p>atributes = provide additional information about elements</p>
+    <p>z.B = a => Link // href atribut specifes the URL of the page (a href="https://www.w3schools.com")</p>
+    <p>z.B = img => tag is used to embed an image // src attribute specifies the path to the image  (img src="img_girl.jpg)</p>
+    <p>The width and height attributes of <img> provide size information for images</p>
+    <p>The alt attribute of <img> provides an alternate text for an image</p>
+    <p>The style attribute is used to add styles to an element, such as color, font, size, and more</p>    
+    <p>The lang attribute of the html tag declares the language of the Web page</p>
+    <p>The title attribute defines some extra information about an element</p>
+    <hr>
+    <p>Heading give search engines the index the structur and content of webpage</p>
+    <p>Bigger Heading => h1 style = "font-size:60px;" => specifies the size of the headung with style atribut using CSS</p>
+    <hr>
+    <p>Paragraph = always starts on a new line, and is usually a block of text.</p>
+    <p>Large or small screens, and resized windows will create different results.</p>
+    <p>browser will automatically remove any extra spaces and lines when the page</p>
+    <p>hr tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule</p>
+    <p>element is used to separate content (or define a change)</p>
+    <hr>
+    <p>Void elements have no content, they are writtem like normal elements, for example</p>
+    <p>hr empty tag = no end tag</p>
+    <p>br = line break == if you want a line break (a new line) without starting a new paragraph</p>
+    <p>br = empty tag = no end tag </p>
+    <p>pre element defines preformatted text => muss nicht jede Zeile neu schreiben poem text bleibr wie er ist (keine Leerzeilen, etc)</p>
+    <p>ext inside a pre element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks</p>
+    <hr>
+    <mark>Correct  DOCTYPE declaration html 5</mark>
+    <p> "!DOCTYPE html>"</p>
+    <mark> Write down syntactically correct statements for the following elements</mark>
+    <pre>
+        Articel: &lt;article>
+        Body: &lt;body&gt;
+        line break: &lt;br>
+        headings: &lt;h1&gt; - &lt;h6&gt; 
+        section with meta-information: &lt;head&gt; 
+        top level element: &lt;html&gt; 
+        image named Team.jpg: &lt;img src="Team.jpg"&gt; 
+        paragraph: &lt;p&gt; 
+        section: &lt;section&gt; 
+        Label appearing in the title bar: &lt;title&gt; 
+        link to other pages: &lt;a&gt; 
+        comment: &lt;!--- this a comment ---&gt; 
+    </pre>
+    <hr>
+    <p></p>
+    <h3 style ="color: mediumblue; border-bottom-style:dotted;">CSS</h3>
+    <pre>
+      selector: h1{
+declartion box:  color:blue (color = property / blue = value)
+                  }
+
+    1. Selector (h1) 2.declartion box (inbetween {}) 3.property (color) 4.value (blue)                
+    </pre>
+    <div id="child">
+        <p>body ist dad => p ist child // Es kommt auf die einrückungen drauf an</p>
+        <p> dieser Text wird rot wegen einrückung und child</p>
+
+        <div id="test">
+            <p>dieser text nicht weil in css nur obere text wegen #child > p zugewiesen würde (> ist sehr wichtig!!)</p>
+            <p>Text in Test id</p>
+        </div>
+    </div>
+    <hr>
+    <p>descendats (einrückungen) wie Famile body alles darunter children (nested to body)</p>
+    <p>Der text in test ist descendats in test id</p>
+    <hr>
+    <p>Adjacent =  es kann einzelne Zeilen bearbeiten ( #child + p = bearbeitet die erste p zeile)</p>
+    <p>Sibling  = es kann jede unterordnung bearbeiten (#child ~ p = bearbeitet alle p die in body drinnen sind</p>
+    <hr>
+    <p>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.</p>
+    <p>Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255). #ff00000 = red 6 digits</p>
+    <p>3 Digit HEX Value #rgb (red green blue) So, if we have #ff00cc, it can be written like this: #f0c.</p>
+    <p>color = color:ff00000; (red)  // background color = background-color:ff00000; (red)</p>
+    <hr>
+    <mark>Pseudo classes for a</mark>
+    <p> "a":link all links</p >
+    <p>a:link = changes color of link </p>
+    <p>a:visited = changes color of link to light grey when visited; </p>
+    <p>a:hover = when courser on link (courser hovers) it will get black;</p>
+    <img src = "Screenshot_9.png" alt = Error;>
+    <hr>
+    <mark>declartion for background image</mark>
+    <p> background-image: url("paper.gif")</p>
+    <p>background-color: #cccccc;</p>
+    <p>he background-image property sets one or more background images for an element.</p>
+    <hr>
+    <p>The text-align property is used to set the horizontal alignment of a text.</p>
+    <p>text-align: center; // text-align: left; // text-align: right;</p>
+    <p>The text-align-last property specifies how to align the last line of a text.</p>
+    <p> text-align-last: right; // text-align-last: center;</p>
+    <p>he direction and unicode-bidi properties can be used to change the text direction of an element:</p>
+    <p> direction: rtl; // unicode-bidi: bidi-override;</p>
+    <p>The vertical-align property sets the vertical alignment of an element.</p>
+    <p>vertical-align: baseline; //  vertical-align: text-top;</p>
+    <hr>
+    <img src = "Screenshot_1.png" alt = "Error">
+    <img src = "Screenshot_2.png" alt = "Error">
+    <img src = "Screenshot_3.png" alt = "Error">
+    <hr>
+    <p>The text-transform property is used to specify uppercase and lowercase letters in a text.</p>
+    <img src = "Screenshot_4.png" alt = "Error">
+    <hr>
+    <mark>differnce between serif and sans-serif fonts</mark>
+    <p>serif have small stroke at the edges of each letter (elegance)</p>
+    <p>sans- serif have clean lines (no small strokes attached)(modern)</p>
+    <img src = "Screenshot_5.png" alt = "Error">
+    <hr>
+    <mark>Declarations for font families</mark>
+    <p>he font-family property specifies the font for an element.</p>
+    <p>The font-family property can hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font.</p>
+    <mark>two types of font family</mark>
+    <p>family-name - The name of a font-family, like "times", "courier", "arial", etc.</p>
+    <p>generic-family - The name of a generic-family, like "serif", "sans-serif", "cursive", "fantasy"</p>
+    <img src = "Screenshot_6.png" alt = "Error">
+    <hr>
+    <p>The font-style property is mostly used to specify italic text.</p>
+    <p>Three values</p>
+    <p>normal - The text is shown normally</p>
+    <p>italic - The text is shown in italics</p>
+    <p>oblique - The text is "leaning"</p>
+    <p>font-style: normal // font-style_ italic</p>
+    <hr>
+    <p>The font-weight property specifies the weight of a font (font-weight:normal) (font-weigth:bold);</p>
+    <hr>
+    <p>Font Variant // The font-variant property specifies whether or not a text should be displayed in a small-caps font. (font-variant:normal // small-caps)</p>
+    <hr>
+    <mark>Declarations for font sizes</mark>
+    <p>The font-size property sets the size of the text.</p>
+    <p>Absolute size:</p>
+    <p>Sets the text to a specified size</p>
+    <p>Does not allow a user to change the text size in all browsers (bad for accessibility reasons)</p>
+    <p>Absolute size is useful when the physical size of the output is known</p>
+    <hr>
+    <p>Relative size:</p>
+    <p>Sets the size relative to surrounding elements</p>
+    <p>Allows a user to change the text size in browsers</p>
+    <hr>
+    <img src = "Screenshot_7.png" alt = "Error">
+    <hr>
+    <p>Set Font Size With Pixels => font-size: 40 px;</p>
+    <p>Set Font Size With Em => font-size: 2.5em;  (40 px / 16  = 2.5 em)</p>
+    <p>Use Combination Of Percent and EM => he solution that works in all browsers, is to set a default font-size in percent for the <body> element:</p>
+    <img src = "Screenshot_8.png" alt = "Error">
+    <hr>
+    <p>The font-weight property sets how thick or thin characters in text should be displayed.</p>
+    <p> font-weight: normal; //  font-weight: bold; // font-weight: 900;</p>
+    <hr>
+    <h1> Cheat Sheet 1</h1>
+    <h3 style ="color: mediumblue; border-bottom-style:dotted;">HTML for Lists</h3>
+    <mark>Unordered HTML List</mark>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <mark>Ordered HTML List </mark>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <Mark>Components of a List</Mark>
+    <p class="ul" >Unordered List => starttag: &lt;ul&gt;  in the list: &lt;li&gt; and bullet points // endtag: &lt;ul&gt;</p>
+    <p class="ol" >Ordered List => starttag: &lt;ol&gt; in the list: &lt;li&gt; and numbers ending: &lt;ol&gt;</p>
+    <hr>
+    <mark>Description List</mark>
+    <dl>
+        <dt>Coffee <span class="ol">&lt;dt&gt;</span></dt>
+        <dd>-black hot drink <span class="ul">&lt;dd&gt;</span></dd>
+        <dt>Milk <span class="ol">&lt;dt&gt;</span></dt>
+        <dd>white cold drink <span class="ul">&lt;dd&gt;</span></dd>
+    </dl>
+    <mark>Compontens of Description List &lt;dl&gt;</mark>
+    <p class="ol">start- and endtag: &lt;dt&gt; defines the term (name) // in list: content</p>
+    <p class="ul">start- and endtag: &lt;dt&gt; tag describes each term // in list: content</p>
+    <hr>
+    <mark>Make bullet square</mark>
+    <ul>
+        <li class="square">Coffee</li>
+        <li class="square">Tea</li>
+        <li class="square">Milk</li>
+    </ul>
+
+
+
+</body>
