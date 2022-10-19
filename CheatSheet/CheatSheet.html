@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang = "eng"></html>
 <head>
-    <title>"Cheat Sheed</title>
+    <title>"Cheat Sheet</title>
     <style>
+        .headLine{
+            background-color:yellow;
+        }
+        .start{
+            font-family: sans-serif;
+            border-bottom-style:dashed;
+        }
+        .end{
+            border-bottom-style:dashed;
+        }
+        .char{
+            color:red;
+        }
+        .selector{
+            color:brown;
+        }
         #child > p{
         color:red;
-        }
-        #test p{
-        color:blue;
-        }
-        a:link{
-        color: skyblue;    
-        }
-        a:visted{
-        color: lightgrey;
-        }
-        a:hover{
-        background:black;
-        color:white;
         }
         .ul{
         color:red;
@@ -28,53 +31,77 @@
         .square{
             list-style-type: square;
         }
+        .image{
+
+            list-style-image:url("my-bullet.png");
+            list-style-position: inside;
+        
+        }
+        .roman{
+            list-style: upper-roman;
+        }
+        .inside{
+            list-style-position: inside;
+        }
+        .outside{
+            list-style-position: outside;
+        }
+        .blackDotted{
+            border: 1px black;
+            border-style:dotted;
+        }
+        .red{
+            border: 1px solid;
+            border-color: red;
+            width: 50%;
+        }
+        .merge{
+                border-collapse: collapse;
+        }
     </style>
 </head>
 <body>
-    <h1> Cheat Sheet 1</h1>
-    <h3 style ="color: mediumblue; border-bottom-style:dotted;">World Wide Web General</h3>
-    <p style="font-style:italic">What are the most essential technologies that made the World Wide Web such a success?</p>
+    <h1 class="headLine">Cheat Sheet 1</h1>
+    <h3 class="start">World Wide Web General</h3>
+    <mark>What are the most essential technologies that made the World Wide Web such a success?</mark>
     <p>HTTPS (Hypertext Transfer Protocol), URL (Uniform Resource Locator), HTML, SMTP (Simple Mail Transfer Protocol), FTP (File Transfer Protocol).</p> 
-    <p style="font-style:italic">How are resources (html pages, images, etc) addressed in the web?</p>
+    <mark>How are resources (html pages, images, etc) addressed in the web?</mark>
     <p>They are adressed with the URL (Uniform Resource Locator).</p>
-    <p style="font-style:italic">What are the general components of a URL?</p>
-    <p style="border-bottom-color: mediumblue; border-bottom-style:dotted;">There are 5 components => Scheme (https://), Subdomain (www), Second-level-Domain (goggle), Top-level-Domain (com), Subdirectory (/ index.html/).</p>
-    <h3 style ="color: mediumblue; border-bottom-style:dotted;">Web Server</h3>
-    <p style="font-style:italic">What is a web server?</p>
+    <mark>What are the general components of a URL?</mark>
+    <p class="end">There are 5 components => Scheme (https://), Subdomain (www), Second-level-Domain (goggle), Top-level-Domain (com), Subdirectory (/ index.html/).</p>
+    <h3 class="start">Web Server</h3>
+    <mark>What is a web server?</mark>
     <p>It is computer software and underlying hardware, that accepts requests via HTTPS or its secure variant HTTPS.</p>
-    <p style="font-style:italic">What does a web server?</p>
+    <mark>What does a web server?</mark>
     <p>It uses HTTP and other protocols (SMTP, FTP) to respond to client requests made over the World Wide Web (WWW).</p>
     <p>The Main Job of a web server is to display website content through storing, processing and delievering webpages to users.</p>
-    <p style="font-style:italic">How can content be stored on a web server?</p>
+    <mark>How can content be stored on a web server?</mark>
     <p>They store data on a server using some kind of database (server-side-storage). Then run server-side code to retrieve needed data, insert</p>
     <p>it into static page templates, and serve the resulting HTML to the client to be displayed by the users browser.</p>
-    <p style="font-style:italic">How is content in webpages described?</p>
+    <mark>How is content in webpages described?</mark>
     <p>Page content refers to all the information contained in a website. Page content can be displayed as text, links, images, audio, animation</p>
-    <p p style="border-bottom-color: mediumblue; border-bottom-style:dotted;">or videos among other things.</p>
-    <h3 style ="color: mediumblue; border-bottom-style:dotted;">Web Client</h3>
-    <p style="font-style:italic">What is a web client?</p>
+    <p class="end">or videos among other things.</p>
+    <h3 class="start">Web Client</h3>
+    <mark >What is a web client?</mark>
     <p>It is an application used for connecting to a web server over HTTP (web browser Firefox).</p>
-    <p style="font-style:italic">What does a web client?</p>
+    <mark>What does a web client?</mark>
     <p>It retrieves it's files from a web server to find the a website which suits the user request and to graphically render the page on the users srceen.</p>
-    <p>Web Client and Web Browser are they the same?</p>
-    <p style="border-bottom-color: mediumblue; border-bottom-style:dotted;">Yes, they are the same.</p>
-    <br>
-    <h3 style ="color: mediumblue; border-bottom-style:dotted;">Hello World</h3>
-    <p style="font-style:italic">What is the html head element?</p>
+    <mark>Web Client and Web Browser are they the same?</mark>
+    <p class="end">Yes, they are the same.</p>
+    <h3 class="start">Hello World</h3>
+    <mark>What is the html head element?</mark>
     <p>It is a container for a metadata (data about data).</p>
-    <p style="font-style:italic">What does !DOCTYPE html mean?</p>
+    <mark>What does !DOCTYPE html mean?</mark>
     <p>It is an "infaormation" to the browser about what document type to expect and helps browser to display web page correctly.</p>
-    <p style="font-style:italic">What are the two top most elements within the html element?</p>
+    <mark>What are the two top most elements within the html element?</mark>
     <p>body, head</p>
-    <p style="font-style:italic">How to emphasize a text and how is it displayed in the browser?</p>
+    <mark>How to emphasize a text and how is it displayed in the browser?</mark>
     <p>You use em tag to emphasize a text and it is displayed as em on CSS.</p>
-    <p style="font-style:italic">How to mark up important ext and how is it displayed in the browser?</p>
-    <p style="border-bottom-color: mediumblue; border-bottom-style:dotted;">You can mark a text with the mark element in html and it has a yellow background.</p>
-    <h1>Cheat Sheet 2</h1>
-    <br>
-    <h3 style ="color: mediumblue; border-bottom-style:dotted;">HTML Basic</h3>
-    <p></p>
-    <p>h = Heading  p = Paragraph  a = Link  href = links destination (www.amazon.de)</p>
+    <mark>How to mark up important ext and how is it displayed in the browser?</mark>
+    <p class="end">You can mark a text with the mark element in html and it has a yellow background.</p>
+    <h1 class="headLine">Cheat Sheet 2</h1>
+    <h3 class="start">HTML Basic</h3>
+    <p><span class="char">h</span> = Heading <span class="char">p</span> = Paragraph sp a = Link  href = links destination (www.amazon.de)</p>
     <p>src = source file  alt = alternative text  width = Breite  height = Höhe</p>
     <p>img = to embed an Image </p>
     <p>empty elements = no content and no end tag (/br>)</p>
@@ -120,32 +147,32 @@
         link to other pages: &lt;a&gt; 
         comment: &lt;!--- this a comment ---&gt; 
     </pre>
-    <hr>
-    <p></p>
-    <h3 style ="color: mediumblue; border-bottom-style:dotted;">CSS</h3>
+    <h3 class="start">CSS</h3>
+    <mark>Name the components of a css rule properly</mark>
     <pre>
-      selector: h1{
-declartion box:  color:blue (color = property / blue = value)
-                  }
+         <span class="selector">h1</span>{
+            <span class="ol">color:blue <span class="ul">(color = property / blue = value)</span></span>
+           }
 
-    1. Selector (h1) 2.declartion box (inbetween {}) 3.property (color) 4.value (blue)                
+     <span class="selector">Selector (h1)</span> <span class="ol">Declartion box (inbetween {})</span> <span class="ul">property (color) value (blue)</span>                
     </pre>
+    <mark>Use combinators properly: direct child, descendant, adjacent sibling, sibling</mark>
     <div id="child">
         <p>body ist dad => p ist child // Es kommt auf die einrückungen drauf an</p>
         <p> dieser Text wird rot wegen einrückung und child</p>
 
         <div id="test">
             <p>dieser text nicht weil in css nur obere text wegen #child > p zugewiesen würde (> ist sehr wichtig!!)</p>
-            <p>Text in Test id</p>
         </div>
     </div>
-    <hr>
+    <mark>Descendtas Definition</mark>
     <p>descendats (einrückungen) wie Famile body alles darunter children (nested to body)</p>
     <p>Der text in test ist descendats in test id</p>
-    <hr>
+    <mark>Adjacent Definition</mark>
     <p>Adjacent =  es kann einzelne Zeilen bearbeiten ( #child + p = bearbeitet die erste p zeile)</p>
+    <mark>Sibling Definition</mark>
     <p>Sibling  = es kann jede unterordnung bearbeiten (#child ~ p = bearbeitet alle p die in body drinnen sind</p>
-    <hr>
+    <mark>Specify colors by color names and in hexadecimal notation</mark>
     <p>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.</p>
     <p>Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255). #ff00000 = red 6 digits</p>
     <p>3 Digit HEX Value #rgb (red green blue) So, if we have #ff00cc, it can be written like this: #f0c.</p>
@@ -156,13 +183,13 @@ declartion box:  color:blue (color = property / blue = value)
     <p>a:link = changes color of link </p>
     <p>a:visited = changes color of link to light grey when visited; </p>
     <p>a:hover = when courser on link (courser hovers) it will get black;</p>
-    <img src = "Screenshot_9.png" alt = Error;>
+    <img class src = "Screenshot_9.png" alt = Error;>
     <hr>
-    <mark>declartion for background image</mark>
+    <mark>Declartion for background image</mark>
     <p> background-image: url("paper.gif")</p>
     <p>background-color: #cccccc;</p>
     <p>he background-image property sets one or more background images for an element.</p>
-    <hr>
+    <mark>Declaration for text alignment (left, right, center, justify)S</mark>
     <p>The text-align property is used to set the horizontal alignment of a text.</p>
     <p>text-align: center; // text-align: left; // text-align: right;</p>
     <p>The text-align-last property specifies how to align the last line of a text.</p>
@@ -171,15 +198,15 @@ declartion box:  color:blue (color = property / blue = value)
     <p> direction: rtl; // unicode-bidi: bidi-override;</p>
     <p>The vertical-align property sets the vertical alignment of an element.</p>
     <p>vertical-align: baseline; //  vertical-align: text-top;</p>
-    <hr>
-    <img src = "Screenshot_1.png" alt = "Error">
+    <mark>Declaration for text decoration (overline, underline, line-through)
+    </mark>
     <img src = "Screenshot_2.png" alt = "Error">
     <img src = "Screenshot_3.png" alt = "Error">
     <hr>
     <p>The text-transform property is used to specify uppercase and lowercase letters in a text.</p>
     <img src = "Screenshot_4.png" alt = "Error">
     <hr>
-    <mark>differnce between serif and sans-serif fonts</mark>
+    <mark>Differnce between serif and sans-serif fonts</mark>
     <p>serif have small stroke at the edges of each letter (elegance)</p>
     <p>sans- serif have clean lines (no small strokes attached)(modern)</p>
     <img src = "Screenshot_5.png" alt = "Error">
@@ -187,29 +214,24 @@ declartion box:  color:blue (color = property / blue = value)
     <mark>Declarations for font families</mark>
     <p>he font-family property specifies the font for an element.</p>
     <p>The font-family property can hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font.</p>
-    <mark>two types of font family</mark>
+    <mark>Two types of font family</mark>
     <p>family-name - The name of a font-family, like "times", "courier", "arial", etc.</p>
     <p>generic-family - The name of a generic-family, like "serif", "sans-serif", "cursive", "fantasy"</p>
     <img src = "Screenshot_6.png" alt = "Error">
-    <hr>
+    <mar>Declarations for font style normal and italic</mar>
     <p>The font-style property is mostly used to specify italic text.</p>
     <p>Three values</p>
     <p>normal - The text is shown normally</p>
     <p>italic - The text is shown in italics</p>
     <p>oblique - The text is "leaning"</p>
     <p>font-style: normal // font-style_ italic</p>
-    <hr>
-    <p>The font-weight property specifies the weight of a font (font-weight:normal) (font-weigth:bold);</p>
-    <hr>
     <p>Font Variant // The font-variant property specifies whether or not a text should be displayed in a small-caps font. (font-variant:normal // small-caps)</p>
-    <hr>
     <mark>Declarations for font sizes</mark>
     <p>The font-size property sets the size of the text.</p>
     <p>Absolute size:</p>
     <p>Sets the text to a specified size</p>
     <p>Does not allow a user to change the text size in all browsers (bad for accessibility reasons)</p>
     <p>Absolute size is useful when the physical size of the output is known</p>
-    <hr>
     <p>Relative size:</p>
     <p>Sets the size relative to surrounding elements</p>
     <p>Allows a user to change the text size in browsers</p>
@@ -220,18 +242,20 @@ declartion box:  color:blue (color = property / blue = value)
     <p>Set Font Size With Em => font-size: 2.5em;  (40 px / 16  = 2.5 em)</p>
     <p>Use Combination Of Percent and EM => he solution that works in all browsers, is to set a default font-size in percent for the <body> element:</p>
     <img src = "Screenshot_8.png" alt = "Error">
-    <hr>
+    <mark>Declarations for font weights</mark>
     <p>The font-weight property sets how thick or thin characters in text should be displayed.</p>
-    <p> font-weight: normal; //  font-weight: bold; // font-weight: 900;</p>
-    <hr>
-    <h1> Cheat Sheet 1</h1>
-    <h3 style ="color: mediumblue; border-bottom-style:dotted;">HTML for Lists</h3>
+    <p>The font-weight property specifies the weight of a font (font-weight:normal) (font-weigth:bold);</p>
+    <p class="end"> font-weight: normal; //  font-weight: bold; // font-weight: 900;</p>
+    <h1 class="headLine"> Cheat Sheet 3</h1>
+    <h3 class="start">HTML for Lists</h3>
+    <img src="unorderedList.png" heigth="75" width="235" style="float:right;"/>
     <mark>Unordered HTML List</mark>
-    <ul>
+    <ul>                                
         <li>Coffee</li>
         <li>Tea</li>
         <li>Milk</li>
     </ul>
+    <img src="orderedList.png" heigth="75" width="235" style="float:right;"/>
     <mark>Ordered HTML List </mark>
     <ol>
         <li>Coffee</li>
@@ -242,6 +266,7 @@ declartion box:  color:blue (color = property / blue = value)
     <p class="ul" >Unordered List => starttag: &lt;ul&gt;  in the list: &lt;li&gt; and bullet points // endtag: &lt;ul&gt;</p>
     <p class="ol" >Ordered List => starttag: &lt;ol&gt; in the list: &lt;li&gt; and numbers ending: &lt;ol&gt;</p>
     <hr>
+    <img src="descriptionList.png" heigth="100" width="400" style="float:right;"/>
     <mark>Description List</mark>
     <dl>
         <dt>Coffee <span class="ol">&lt;dt&gt;</span></dt>
@@ -252,14 +277,146 @@ declartion box:  color:blue (color = property / blue = value)
     <mark>Compontens of Description List &lt;dl&gt;</mark>
     <p class="ol">start- and endtag: &lt;dt&gt; defines the term (name) // in list: content</p>
     <p class="ul">start- and endtag: &lt;dt&gt; tag describes each term // in list: content</p>
-    <hr>
+    <h3 class="start">Css for Lists</h3> 
     <mark>Make bullet square</mark>
+    <img src="Square.png" heigth="75" width="200" style="float:right;"/>
     <ul>
         <li class="square">Coffee</li>
         <li class="square">Tea</li>
         <li class="square">Milk</li>
     </ul>
-
+    <mark>Make bullet an image named "my-bullet.png"</mark>
+    <img src="Bullet.png" heigth="75" width="200" style="float:right;"/>
+    <ul class="image">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <hr>
+    <mark>Make bullet an uppercase roman number</mark>
+    <img src="Roman.png" heigth="75" width="200" style="float:right;"/>
+    <ul class="roman">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <hr>
+    <mark>Set bullet position to be inside the list item's text flow</mark>
+    <img src="inside.png" height="75" width="200" style="float:right;"/>
+        <ul class="inside">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <hr>
+    <mark>Set bullet position to be outside the list item's text flow</mark>
+    <img src="Outside.png" height="75" width="200" style="float:right;"/>
+    <ul class="outside">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <h3 class="start">Html for Tables</h3>
+    <img src="table.png" heigth="75" width ="200" style="float:right;"/> 
+    <p>Definition: HTML tables allow web developers to arrange data into rows and columns.</p>
+    <p>Start tag for <mark>table:</mark> &lt;table&gt;</p>
+    <p>Start tag for <mark>table row:</mark> &lt;tr&gt;</p>
+    <p>Start tag for <mark>table header:</mark> &lt;thead&gt;</p>
+    <p>Start tag for <mark>table header cell:</mark> &lt;th&gt;</p>
+    <p>Start tag for <mark>table body:</mark>&lt;tbody&gt; </p>
+    <p>Start tag for <mark>table cell:</mark> &lt;td&gt; (table data)</p>
+    <p>Start tag for <mark>table footer</mark>&lt;tfoot&gt;</p>
+    <p>Start tag for <mark>table footer cell</mark>&lt;tfoot&gt;</p>
+    <h3 class="start">Css for Tables</h3>
+    <mark>Black dotted border of 1 px width.</mark>
+    <img src="blackdotted.png" heigth="75" width="235" style="float:right;"/>
+    <table style= "border: 1px dotted">
+        <caption>Table</caption>
+        <tr >
+            <th>Name</th>
+            <th>Age</th>
+            <th>Height</th>
+            <th>Adress</th>
+            <th>School</th>
+            <th>School Adress</th>
+        </tr>
+        <tr>
+            <td>Nikola</td>
+            <td>16</td>
+            <td>174 cm</td>
+            <td>Linz</td>
+            <td>HTBLA Leonding</td>
+            <td>Limesstraße 12 - 14</td>
+        </tr>
+        <tr>
+            <td>Moritz</td>
+            <td>15</td>
+            <td>175 cm</td>
+            <td>Ebelsberg</td>
+            <td>HTBLA Leonding</td>
+            <td>Limesstraße 12 - 14</td>
+        </tr>
+    </table>
+    <hr>
+    <mark>Solid border of 1 px width having a red color and rounded corners</mark>
+    <img src="Red.png" heigth="75" width="235" style="float:right;"/>
+    <table class="red">
+        <caption>Table</caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Height</th>
+            <th>Adress</th>
+            <th>School</th>
+            <th>School Adress</th>
+        </tr>
+        <tr>
+            <td>Nikola</td>
+            <td>16</td>
+            <td>174 cm</td>
+            <td>Linz</td>
+            <td>HTBLA Leonding</td>
+            <td>Limesstraße 12 - 14</td>
+        </tr>
+        <tr>
+            <td>Moritz</td>
+            <td>15</td>
+            <td>175 cm</td>
+            <td>Ebelsberg</td>
+            <td>HTBLA Leonding</td>
+            <td>Limesstraße 12 - 14</td>
+        </tr>
+    </table>
+    <hr>
+    <mark>Merge the borders of table cells so that they appear as one line</mark>
+    <img src="Merge.png" heigth="75" width="235" style="float:right;"/>
+    <table style="border-collapse:collapse">
+        <caption>Table</caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Height</th>
+            <th>Adress</th>
+            <th>School</th>
+            <th>School Adress</th>
+        </tr>
+        <tr>
+            <td>Nikola</td>
+            <td>16</td>
+            <td>174 cm</td>
+            <td>Linz</td>
+            <td>HTBLA Leonding</td>
+            <td>Limesstraße 12 - 14</td>
+        </tr>
+        <tr>
+            <td>Moritz</td>
+            <td>15</td>
+            <td>175 cm</td>
+            <td>Ebelsberg</td>
+            <td>HTBLA Leonding</td>
+            <td>Limesstraße 12 - 14</td>
+        </tr>
+    </table>
 
 
 </body>
